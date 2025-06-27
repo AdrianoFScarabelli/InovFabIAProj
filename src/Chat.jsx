@@ -4,7 +4,7 @@ import Relogio from './Relogio';
 import './Chat.css';
 
 const Chat = () => {
-  const gifs = ['/escutando.gif', '/processando.gif', '/respondendo.gif'];
+  const gifs = ['/escutando.gif', '/processando.gif', '/respondendo.gif', '/pause.png'];
   const [gifIndex, setGifIndex] = useState(0);
   const [gravando, setGravando] = useState(false);
   const [mensagens, setMensagens] = useState([]);
@@ -13,6 +13,8 @@ const Chat = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  setGifIndex(3);
+  
   useEffect(() => {
     if (mensagensRef.current) {
       mensagensRef.current.scrollTop = mensagensRef.current.scrollHeight;
@@ -135,7 +137,7 @@ const Chat = () => {
     recognition.lang = 'pt-BR';
     recognition.interimResults = false;
     recognition.maxAlternatives = 1;
-
+    
     setGifIndex(0);
     setGravando(true);
 
