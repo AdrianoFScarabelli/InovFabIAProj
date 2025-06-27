@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.logo {
+  width: 3.5vw;
+  height: auto;
+  max-width: 57px;
+}
+
+.logo-container {
+  margin-top: 1.5vh;
+  margin-left: 1.5vw;
+}
+
+.titulo-container {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 720px;
+  height: 64px;
+  top: 0;
+  margin-top: 1.5vh;
+  background-color: #212121;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.titulo {
+  font-size: 2.2vw;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.chat-container {
+  position: fixed;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90vw;
+  max-width: 1300px;
+  height: 60vh;
+  background-color: #212121;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #FFFFFF;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.chat-container::-webkit-scrollbar {
+  display: none;
+}
+
+.mensagem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.perguntas {
+  align-self: flex-end;
+  background-color: #303030;
+  padding: 15px 20px;
+  border-radius: 40px;
+  max-width: 70%;
+  text-align: right;
+  word-wrap: break-word;
+}
+
+.resposta {
+  align-self: flex-start;
+  background-color: #303030;
+  padding: 15px 20px;
+  border-radius: 40px;
+  max-width: 70%;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.resposta-container {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 70px;
+  background-color: #212121;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  z-index: 10;
+}
+
+.gif {
+  width: 60px;
+  height: 60px;
+}

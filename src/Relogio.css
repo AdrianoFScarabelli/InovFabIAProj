@@ -1,0 +1,19 @@
+.relogio-container {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  background-color: #0080C0;
+  color: white;
+  padding: 5px 5px;
+  border-radius: 10px;
+  text-align: center;
+}
+  
+.hora {
+  font-size: 28px;
+  font-weight: bold;
+}
+  
+.data {
+  font-size: 16px;
+}
