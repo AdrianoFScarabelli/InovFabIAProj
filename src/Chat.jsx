@@ -4,7 +4,7 @@ import Relogio from './Relogio';
 import './Chat.css';
 
 const Chat = () => {
-  const gifs = ['/escutando.gif', '/processando.gif', '/respondendo.gif', '/pause.png'];
+  const gifs = ['/escutando.gif', '/processando.gif', '/respondendo.gif'];
   const [gifIndex, setGifIndex] = useState(0);
   const [gravando, setGravando] = useState(false);
   const [mensagens, setMensagens] = useState([]);
