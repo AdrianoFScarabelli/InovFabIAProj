@@ -12,8 +12,6 @@ const Chat = () => {
 
   const navigate = useNavigate();
   const location = useLocation();
-
-  setGifIndex(3);
   
   useEffect(() => {
     if (mensagensRef.current) {
@@ -32,6 +30,7 @@ const Chat = () => {
 
     socket.onopen = () => {
       console.log('✅ WebSocket ativo em Chat.jsx');
+      setGifIndex(3);
     };
 
     socket.onmessage = (event) => {
