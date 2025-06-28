@@ -30,7 +30,6 @@ const Chat = () => {
 
     socket.onopen = () => {
       console.log('✅ WebSocket ativo em Chat.jsx');
-      setGifIndex(3);
     };
 
     socket.onmessage = (event) => {
@@ -162,7 +161,6 @@ const Chat = () => {
     recognition.onend = () => {
       if (gravando) {
         setGravando(false);
-        setGifIndex(3);
       }
     };
 
