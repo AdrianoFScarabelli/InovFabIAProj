@@ -162,6 +162,7 @@ const Chat = () => {
     recognition.onend = () => {
       if (gravando) {
         setGravando(false);
+        setGifIndex(3);
       }
     };
 
